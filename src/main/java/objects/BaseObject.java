@@ -20,6 +20,7 @@ public class BaseObject {
     }
 
     public BaseObject(){
+        System.setProperty("webdriver.gecko.driver","C:\\temp\\geckodriver.exe");
         this.driver = new FirefoxDriver();
         this.driver.manage().window().maximize();
         this.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
